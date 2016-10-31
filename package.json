@@ -1,0 +1,34 @@
+{
+  "name": "delaunay",
+  "version": "1.0.0",
+  "description": "Delaunay Triangles",
+  "scripts": {
+    "build:js": "webpack --colors --bail",
+    "build:js:prod": "webpack --colors --bail --production",
+    "watch:js": "webpack --watch -d"
+  },
+  "author": "Maxime Cousinou",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-loader": "*",
+    "babel-preset-es2015": "*",
+    "delaunay-fast": "git+ssh://git@github.com/ironwallaby/delaunay.git",
+    "eslint": "*",
+    "eslint-loader": "*",
+    "mf-js": "*",
+    "three": "*",
+    "watch": "*",
+    "webpack": "*"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "main": "webpack.config.js"
+}
